@@ -32,7 +32,7 @@ for (var i=1; i<=16; i++){
 // Initial states...
 new TimelineMax({onStart:populate})
 		.set(game, 			{userSelect:'none', background:'radial-gradient(#333, #000 120%)'})
-		.set('.btn',		{width:90, height:90, borderRadius:'50%', border:'3px solid transparent', textAlign:'center', fontSize:72, lineHeight:'86px', cursor:'pointer'})
+		.set('.btn',		{width:90, height:90, borderRadius:'50%', border:'3px solid transparent', textAlign:'center', fontSize:130, lineHeight:'86px', cursor:'pointer'})
 		.set(hintBtn,		{right:30, bottom:30, width:75, fontSize:25, textAlign:'center', cursor:'pointer', autoAlpha:0})
 	.set('.foundTxt',	{left:0, top:30, width:1024, fontSize:35, textAlign:'center', textContent:'找到两个相同滴~~', fontWeight:300, letterSpacing:0.25})
 		.set('.timeTxt',	{left:30, top:20, fontSize:50})
