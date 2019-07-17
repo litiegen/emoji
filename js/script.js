@@ -32,9 +32,9 @@ for (var i=1; i<=16; i++){
 // Initial states...
 new TimelineMax({onStart:populate})
 		.set(game, 			{userSelect:'none', background:'radial-gradient(#333, #000 120%)'})
-		.set('.btn',		{width:90, height:90, borderRadius:'50%', border:'3px solid transparent', textAlign:'center', fontSize:130, lineHeight:'86px', cursor:'pointer'})
+		.set('.btn',		{width:170, height:170, borderRadius:'50%', border:'5px solid transparent', textAlign:'center', fontSize:130, lineHeight:'120px',cursor:'pointer'})
 		.set(hintBtn,		{right:30, bottom:30, width:75, fontSize:25, textAlign:'center', cursor:'pointer', autoAlpha:0})
-	.set('.foundTxt',	{left:0, top:30, width:1024, fontSize:35, textAlign:'center', textContent:'找到两个相同滴~~', fontWeight:300, letterSpacing:0.25})
+	.set('.foundTxt',	{left:0, top:30, width:1024, fontSize:55, textAlign:'center', textContent:'找到两个相同滴~~', fontWeight:300, letterSpacing:0.25})
 		.set('.timeTxt',	{left:30, top:20, fontSize:50})
 		.set('.timePlus',	{left:58, top:75, fontSize:25, alpha:0})
 		.set('.end',		{width:'100%', height:'100%', background:'rgba(255,255,255,0.1)', autoAlpha:0, cursor:'pointer'})
@@ -51,7 +51,7 @@ function populate() {
 		
 		lastBtn = undefined;
 		msTilHint = 5000;
-		TweenMax.set(hintBtn, {autoAlpha:0, textContent:"Hint?", fontSize:25});
+		TweenMax.set(hintBtn, {autoAlpha:0, textContent:"提示？", fontSize:55,top:1100,left:750});
 		TweenMax.staggerFromTo('.btn', 0.3, {scale:0.2, alpha:0, rotation:1}, {rotation:0, alpha:1, scale:1, ease:Back.easeOut.config(4), stagger:{ grid:[4,4], from:"center", amount:0.2} });
 
 		var btns = [];
