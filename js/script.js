@@ -4,7 +4,7 @@ var game = document.getElementById('game'),
 		btnArea = document.getElementById('btnArea'),
 		hintBtn = document.getElementById('hintBtn'),
 		replayBtn = document.getElementById('replayBtn'),
-		timeLimit = 30*1000, // in millisec
+		timeLimit = 40*1000, // in millisec
 		timeLeft,
 		timeInt,
 		lastBtn,
@@ -172,22 +172,22 @@ function doResize() {
   TweenMax.set('.fs', {transformOrigin:'0 0', scale:(cw*ratio)/560});
 
   new TimelineMax()
-			.set('#b1',  {left:320, top:100})
-			.set('#b2',  {left:420, top:100})
-			.set('#b3',  {left:520, top:100})
-			.set('#b4',  {left:620, top:100})
-			.set('#b5',  {left:320, top:200})
-			.set('#b6',  {left:420, top:200})
-			.set('#b7',  {left:520, top:200})
-			.set('#b8',  {left:620, top:200})
-			.set('#b9',  {left:320, top:300})
-			.set('#b10', {left:420, top:300})
-			.set('#b11', {left:520, top:300})
-			.set('#b12', {left:620, top:300})
-			.set('#b13', {left:320, top:400})
-			.set('#b14', {left:420, top:400})
-			.set('#b15', {left:520, top:400})
-			.set('#b16', {left:620, top:400})
+			.set('#b1',  {left:120, top:300})
+			.set('#b2',  {left:320, top:300})
+			.set('#b3',  {left:520, top:300})
+			.set('#b4',  {left:720, top:300})
+			.set('#b5',  {left:120, top:500})
+			.set('#b6',  {left:320, top:500})
+			.set('#b7',  {left:520, top:500})
+			.set('#b8',  {left:720, top:500})
+			.set('#b9',  {left:120, top:700})
+			.set('#b10', {left:320, top:700})
+			.set('#b11', {left:520, top:700})
+			.set('#b12', {left:720, top:700})
+			.set('#b13', {left:120, top:900})
+			.set('#b14', {left:320, top:900})
+			.set('#b15', {left:520, top:900})
+			.set('#b16', {left:720, top:900})
 }
 
 doResize();

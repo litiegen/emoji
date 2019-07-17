@@ -23,13 +23,13 @@ body, #container {
 }
 
 #container {
-	max-width: 1024px;
-	max-height: 960px;
+	max-width: 375px;
+	max-height: 812px;
 	left:50%;
 	transform:translate(-50%);
 }
 
 .fs {
-	width:1024px;
-	height:560px;
+	width:375px;
+	height:812px;
 }
